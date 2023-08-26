@@ -66,7 +66,8 @@ body{
 .search-box{
        padding: 15px;
        margin: 15px;
-       border: 1px solid black;
+       border: 0.2px solid black;
+       
        border-radius: 10px;
        width: 400px;
        height: 10px;
@@ -127,3 +128,39 @@ body{
 }
 
 
+.sub-menu-1{
+       display: none;
+}
+
+.sub-menu-1:hover{
+       background-color: #292828;
+}
+
+.hovereffect:hover .sub-menu-1{
+       display: block;
+       position: absolute;
+       background-color: #777;
+       margin-top: 15px;
+       margin-left: 15px;
+}
+
+
+
+.hovereffect:hover .sub-menu-1 ul{
+
+       display: block;
+       margin: 10px;
+
+}
+
+.hovereffect:hover .sub-menu-1 ul li{
+       width: 150px;
+       padding: 10px;
+       text-align: left;
+       border-radius: 0;
+        /*border-bottom: 1px dotted #292828; i will use this if i want to but for now hover effect is getting  the jod done so chill */
+}
+
+.hovereffect:hover .sub-menu-1 ul li:last-child{
+       border-bottom: none;
+}
