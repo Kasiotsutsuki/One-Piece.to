@@ -1,0 +1,166 @@
+*{
+       padding: 0;
+       margin: 0;
+       
+}
+
+body{
+       background-image: url(img/Monkey\ D_\ Luffy\ Wallpaper.jpeg);
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       box-sizing: border-box;
+       font-family: "Arial",sans-serif;
+       height: 100vh;
+
+}
+
+/* .nav-bar{
+       position: fixed;
+       width: auto;
+       height: auto;
+       align-items: center;
+
+       
+} */
+
+.logo-img{
+       width: auto;
+       height: 50px;
+       padding: 5px;
+       padding-right: 20px;
+       margin: 5px;
+
+}
+.logo-img:hover{
+       background-color: #fff;
+}
+
+
+.menu-bar{
+       text-align: center;
+       background-color: #fff;
+       position: sticky;
+       width: auto;
+       height: auto;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      
+}
+
+.menu-bar ul{
+       display: inline-flex;
+       color: black;
+       list-style: none;
+}
+
+.menu-bar ul li{
+       width: 100px;
+       margin: 15px;
+       margin-bottom: 10px;
+       padding: 15px;
+       padding-bottom: 10px;
+}
+
+
+.search-box{
+       padding: 15px;
+       margin: 15px;
+       border: 0.2px solid black;
+       
+       border-radius: 10px;
+       width: 400px;
+       height: 10px;
+       display: flex;
+       align-items: center;
+}
+
+.fa-magnifying-glass{
+
+       padding-right: 10px;
+}
+
+.search-box input{
+       border: none;
+       width: 475px;
+       font-size: 20px;
+       color: #080707;
+       flex: 1;
+       outline: none;
+      
+}
+
+.menu-bar ul  a{
+
+       text-decoration: none;
+       color: black;
+      
+       
+}
+
+
+
+.hovereffect{
+
+       font: 1em Arial, sans-serif;
+       display: inline-block;
+       padding: 1em;margin: 1em;
+        border-radius: 5px; 
+       text-decoration: none;
+       color: black;
+       
+       background: transparent;
+       background-image: linear-gradient(rgb(69, 69, 69), rgb(69, 69, 69)), linear-gradient(silver, silver);
+       background-size: 0 5px, auto;
+       background-repeat: no-repeat;
+       background-position: center bottom;
+       transition: all .2s ease-out;
+     }
+       
+     
+
+
+
+.hovereffect:hover{
+
+       background-size: 100% 5px, auto;
+      
+}
+
+
+.sub-menu-1{
+       display: none;
+}
+
+.sub-menu-1:hover{
+       background-color: #292828;
+}
+
+.hovereffect:hover .sub-menu-1{
+       display: block;
+       position: absolute;
+       background-color: #777;
+       margin-top: 15px;
+       margin-left: 15px;
+}
+
+
+
+.hovereffect:hover .sub-menu-1 ul{
+
+       display: block;
+       margin: 10px;
+
+}
+
+.hovereffect:hover .sub-menu-1 ul li{
+       width: 150px;
+       padding: 10px;
+       text-align: left;
+       border-radius: 0;
+        /*border-bottom: 1px dotted #292828; i will use this if i want to but for now hover effect is getting  the jod done so chill */
+}
+
+.hovereffect:hover .sub-menu-1 ul li:last-child{
+       border-bottom: none;
+}
