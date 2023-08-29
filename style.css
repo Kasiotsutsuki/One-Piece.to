@@ -12,7 +12,7 @@ body{
        background-attachment: fixed;
        box-sizing: border-box;
        font-family: "Arial",sans-serif;
-       height: 100vh;
+       
 
 }
 
@@ -34,14 +34,14 @@ body{
 
 }
 .logo-img:hover{
-       background-color: #fff;
+       background-color: #ffffff;
 }
 
 
 .menu-bar{
-       text-align: center;
-       background-color: #fff;
-       position: sticky;
+       text-align:center;
+       background-color: #ffffff;
+     
        width: auto;
        height: auto;
        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -102,13 +102,12 @@ body{
 
 .hovereffect{
 
-       font: 1em Arial, sans-serif;
+       font:  Arial, sans-serif;
        display: inline-block;
-       padding: 1em;margin: 1em;
+       padding: 5px;margin: 5px;
         border-radius: 5px; 
        text-decoration: none;
        color: black;
-       
        background: transparent;
        background-image: linear-gradient(rgb(69, 69, 69), rgb(69, 69, 69)), linear-gradient(silver, silver);
        background-size: 0 5px, auto;
@@ -163,4 +162,13 @@ body{
 
 .hovereffect:hover .sub-menu-1 ul li:last-child{
        border-bottom: none;
+}
+
+
+.hovereffect .Settings{
+       background-image: none;
+
+
+       margin-right: 30px;
+       
 }
