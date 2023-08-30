@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&family=Nunito:wght@200;300;400;500;600&family=Press+Start+2P&display=swap');
+
 *{
+       font-family:"Nunito",sans-serif;
        padding: 0;
        margin: 0;
+       text-decoration: none;
+       text-transform: capitalize;
+       border: none;
+       outline: none;
+       transition: all 2s linear;
+
        
 }
 
@@ -12,18 +21,21 @@ body{
        background-attachment: fixed;
        box-sizing: border-box;
        font-family: "Arial",sans-serif;
+       position: sticky;
+       top: 0;
        
 
 }
 
-/* .nav-bar{
-       position: fixed;
+.nav-bar{
+       position: sticky;
+       top: 0;
        width: auto;
        height: auto;
        align-items: center;
 
        
-} */
+}
 
 .logo-img{
        width: auto;
@@ -41,7 +53,8 @@ body{
 .menu-bar{
        text-align:center;
        background-color: #ffffff;
-     
+       position:sticky;
+       top: 0;
        width: auto;
        height: auto;
        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -60,6 +73,7 @@ body{
        margin-bottom: 10px;
        padding: 15px;
        padding-bottom: 10px;
+      
 }
 
 
@@ -171,4 +185,32 @@ body{
 
        margin-right: 30px;
        
+}
+
+.container {
+       display: grid;
+       display: flex;
+       grid-template-columns: repeat(10, 1fr); /* Display 10 posters in a row */
+       gap: 20px;
+       padding: 20px;
+     }
+
+     .manga-poster {
+       width: 100%;
+       max-width: 150px; 
+       height: auto;
+       border: 1px solid #ddd;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     }
+
+
+
+.footer{
+
+       background-color: #1f1f1f;
+       text-align: center;
+       color: #ffffff;
+       font-family:"Nunito",sans-serif;
+       height: auto;
+       width: auto;
 }
