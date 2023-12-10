@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&family=Nunito:wght@200;300;400;500;600&family=Press+Start+2P&display=swap');
+
 *{
+       font-family:"Nunito",sans-serif;
        padding: 0;
        margin: 0;
+       text-decoration: none;
+       text-transform: capitalize;
+       border: none;
+       outline: none;
+       transition: all 2s linear;
+
        
 }
 
@@ -12,18 +21,21 @@ body{
        background-attachment: fixed;
        box-sizing: border-box;
        font-family: "Arial",sans-serif;
-       height: 100vh;
+       position: sticky;
+       top: 0;
+       
 
 }
 
-/* .nav-bar{
-       position: fixed;
+.nav-bar{
+       position: sticky;
+       top: 0;
        width: auto;
        height: auto;
        align-items: center;
 
        
-} */
+}
 
 .logo-img{
        width: auto;
@@ -34,14 +46,15 @@ body{
 
 }
 .logo-img:hover{
-       background-color: #fff;
+       background-color: #ffffff;
 }
 
 
 .menu-bar{
-       text-align: center;
-       background-color: #fff;
-       position: sticky;
+       text-align:center;
+       background-color: #ffffff;
+       position:sticky;
+       top: 0;
        width: auto;
        height: auto;
        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -60,6 +73,7 @@ body{
        margin-bottom: 10px;
        padding: 15px;
        padding-bottom: 10px;
+      
 }
 
 
@@ -102,13 +116,12 @@ body{
 
 .hovereffect{
 
-       font: 1em Arial, sans-serif;
+       font:  Arial, sans-serif;
        display: inline-block;
-       padding: 1em;margin: 1em;
+       padding: 5px;margin: 5px;
         border-radius: 5px; 
        text-decoration: none;
        color: black;
-       
        background: transparent;
        background-image: linear-gradient(rgb(69, 69, 69), rgb(69, 69, 69)), linear-gradient(silver, silver);
        background-size: 0 5px, auto;
@@ -158,9 +171,47 @@ body{
        padding: 10px;
        text-align: left;
        border-radius: 0;
-        /*border-bottom: 1px dotted #292828; i will use this if i want to but for now hover effect is getting  the jod done so chill */
+        /*border-bottom: 1px dotted #292828; i will use this if i want to but for now hover effect is getting 
+         the jod done ,so chill */
 }
 
 .hovereffect:hover .sub-menu-1 ul li:last-child{
        border-bottom: none;
+}
+
+
+.hovereffect .Settings{
+       background-image: none;
+
+
+       margin-right: 30px;
+       
+}
+
+.container {
+       display: grid;
+       display: flex;
+       grid-template-columns: repeat(10, 1fr); /* Display 10 posters in a row */
+       gap: 20px;
+       padding: 20px;
+     }
+
+     .manga-poster {
+       width: 100%;
+       max-width: 150px; 
+       height: auto;
+       border: 1px solid #ddd;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     }
+
+
+
+.footer{
+
+       background-color: #1f1f1f;
+       text-align: center;
+       color: #ffffff;
+       font-family:"Nunito",sans-serif;
+       height: auto;
+       width: auto;
 }
